@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ESNEXT",
+        "module": "CommonJS",
+        "removeComments": true,
+        "jsx": "react",
+        "esModuleInterop": true,
+        "strict": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}

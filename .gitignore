@@ -1,0 +1,10 @@
+# Misc
+.cache
+.vscode
+
+# Node Modules
+node_modules
+
+
+# Production build
+dist

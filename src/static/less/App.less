@@ -1,0 +1,37 @@
+@import './mixins/_mixins.less';
+@import 'Drums.less';
+
+@font-color-dark: white;
+@font-color-light: #2d2d2d;
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @font-color-dark;
+}
+
+#App {
+    .flex(column, center, initial);
+
+    height: calc(100vh - 2rem);
+    max-width: 500px;
+
+    margin: auto;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    #App {
+        height: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "drum-machine",
+    "version": "0.0.1",
+    "description": "Drum machine built with React.",
+    "main": "./src/containers/App.tsx",
+    "repository": "none",
+    "author": "Code Plus Coffee",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "start": "parcel public/index.html",
+        "build": "parcel build public/index.html",
+        "clean": "rm -r .cache dist"
+    },
+    "devDependencies": {
+        "@types/react": "^16.9.35",
+        "@types/react-dom": "^16.9.8",
+        "less": "^3.11.3",
+        "parcel-bundler": "^1.12.4",
+        "typescript": "^3.9.5"
+    },
+    "dependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}
