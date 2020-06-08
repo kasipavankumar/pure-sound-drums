@@ -1,9 +1,11 @@
 import '../static/less/App.less'
 
-import React, { Fragment, useEffect, FunctionComponent } from 'react'
+import React, { Fragment, useEffect, useState, FunctionComponent, lazy, Suspense } from 'react'
 import { render } from 'react-dom'
 
-import Drums from '../components/Drums/Drums'
+import Spinner from '../components/Spinner/Spinner'
+
+const Drums = lazy(() => import('../components/Drums/Drums'))
 
 const gradients: string[] = [
     'linear-gradient(to right, #4e54c8, #8f94fb)',
@@ -29,13 +31,15 @@ const gradients: string[] = [
 
 const App: FunctionComponent = (): JSX.Element => {
     useEffect(() => {
-        document.body.style.background =
-            gradients[Math.floor(Math.random() * gradients.length)]
+        document.body.style.background = gradients[Math.floor(Math.random() * gradients.length)]
+        localStorage.setItem('visited', JSON.stringify(true))
     }, [gradients])
 
     return (
         <Fragment>
-            <Drums />
+            <Suspense fallback={<Spinner />}>
+                <Drums />
+            </Suspense>
         </Fragment>
     )
 }
