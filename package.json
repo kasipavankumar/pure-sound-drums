@@ -9,7 +9,7 @@
     "private": true,
     "scripts": {
         "start": "parcel public/index.html",
-        "build": "parcel build public/index.html",
+        "build": "npm run clean && parcel build public/index.html",
         "clean": "rm -r .cache dist"
     },
     "devDependencies": {
