@@ -1,10 +1,10 @@
 {
-    "name": "drum-machine",
-    "version": "0.0.1",
-    "description": "Drum machine built with React.",
+    "name": "pure-sound-drums",
+    "version": "1.0.2",
+    "description": "A Drum machine built with React.",
     "main": "./src/containers/App.tsx",
-    "repository": "none",
-    "author": "Code Plus Coffee",
+    "repository": "https://github.com/kasipavankumar/pure-sound-drums",
+    "author": "Kasi Pavan Kumar <kasipavankumar>",
     "license": "MIT",
     "private": true,
     "scripts": {
